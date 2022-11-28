@@ -4,9 +4,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        avarablack:["avarablack","black"],
-        avarabold:["avarabold","bold"],
-        avarabold_italic:["avarabold_italic","bolditalic"]
+        avarablack:["avarablack","regular"],
+        avarabold:["avarabold","regular"],
+        avarabold_italic:["avarabold_italic","regular"],
+        calistoga:["calistoga","regular"],
+        lobster:["lobster","regular"]
       }
     }
   },

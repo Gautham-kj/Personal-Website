@@ -1,14 +1,16 @@
 <script>
     let logstatus = true;
+    let logout='../lib/images/logout.svg';
 </script>
-    <nav>
-        <div>
+    <nav class=" bg-black h-10">
+        <div class="flex justify-between border-2 border-white h-10 items-center">
+            <div class="flex p-2 items-center">
+                <h1 class="text-red-500 font-avarablack">
+                    this is a test
+                </h1>
+            </div>
+            <div class="flex">
 
+            </div>
         </div>
-    
-		<div class="flex min-w-full h-10 p-20 h-10 border-2 bg-slate-400 border-black ">
-             <p>
-                this is a test
-             </p>
-		</div>
     </nav>

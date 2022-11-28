@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+
+}
+
+@font-face {
+    font-family: 'avarablack';
+    src: url('fonts/avara-black-webfont.woff2') format('woff2'),
+        url('fonts/avara-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'avarabold';
+    src: url('fonts/avara-bold-webfont.woff2') format('woff2'),
+        url('fonts/avara-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'avarabold_italic';
+    src: url('fonts/avara-bolditalic-webfont.woff2') format('woff2'),
+        url('fonts/avara-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

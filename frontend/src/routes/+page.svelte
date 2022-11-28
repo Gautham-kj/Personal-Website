@@ -6,4 +6,4 @@
 	
 </head>
 <Navbar/>
-<body class="bg-slate-500"/>
+<body class="bg-black"/>

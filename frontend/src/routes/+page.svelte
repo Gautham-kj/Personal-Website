@@ -1,12 +1,9 @@
 <script>
-	let src = "../../lib/images/logout.svg";
+	import Navbar from "../Components/Navbar.svelte";
 </script>
 
 <head>
-	<img {src} alt="Logout Button">
+	
 </head>
-
-<body>
-
-</body>
-
+<Navbar/>
+<body class="bg-slate-500"/>

@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
     let logstatus = true;
-    let darkmode = true;
+    export let darkmode:boolean
 </script>
 
 <nav class="{darkmode?"dark":""}">

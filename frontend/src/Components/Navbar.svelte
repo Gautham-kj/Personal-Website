@@ -22,9 +22,9 @@
         <!-- Navigation Buttons -->
         <div class="flex pr-6 space-x-6 text-xl font-avarabold text-white  items-center ">
             <div class="hidden md:flex">
-                <a href="/ProjectDetails">
+                <a href="#ProjectDetails">
                     <button class="dark:hover:text-white hover:text-black rounded-xl border-white bg-slate-400 hover:bg-opacity-20 bg-opacity-0 p-3" >
-                        About
+                        About Me
                     </button >
                 </a>
                 <a href="/">

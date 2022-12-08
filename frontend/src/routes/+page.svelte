@@ -14,18 +14,18 @@
     <Navbar bind:darkmode />
     <div class="w-screen " style:height={`${0.5625*width}`}>
         <div class=" w-full overflow-x-hidden bg-nightsky">
-                <img src={sky} alt="sky" class="w-full overflow-hidden -z-3 absolute " style:transform={`translate3d(0,-${scroll*0.5}px,0)`}/>
-                <img src={backmount} alt="backmountain" class="w-full transform overflow-hidden -z-1 absolute" />
-                <div class="w-full py-16 md:py-24  -z-2 absolute overflow-hidden">
-                    <img src={Realmoon} alt="Moon" class="w-20 md:w-40  transform overflow-hidden " style:transform={`translate3d(${scroll}px,0,0)`}/>
+                <img src={sky} alt="sky" class="w-full overflow-hidden z-8 absolute bg-nightsky" style:transform={`translate3d(0,-${scroll*0.3}px,0)`}/>
+                <img src={backmount} alt="backmountain" class="w-full transform overflow-hidden z-1 absolute" />
+                <div class="w-full py-16 md:py-24 absolute overflow-hidden">
+                    <img src={Realmoon} alt="Moon" class="w-20 md:w-40 -z-5 transform overflow-hidden " style:transform={`translate3d(${scroll}px,0,0)`}/>
                 </div>
-                <img src={frontmount} alt="frontmountain" class="w-full overflow-x-hidden absolute z-0" />
+                <img src={frontmount} alt="frontmountain" class="w-full overflow-x-hidden absolute z-3" />
                 
         </div>
         
     </div>
 </div>
-<main class="about  p-4 bg-mainbg " style:transform={`translate3d(0,${0.5625*width}px,0)`}>
+<main class=" p-4 bg-mainbg " id="about" style:transform={`translate3d(0,${0.5625*width}px,0)`}>
             <h1 class="font-avarabold text-3xl text-white text-semibold" >
                 About
             </h1>

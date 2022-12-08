@@ -1,36 +1,38 @@
 <script lang="ts">
     let logstatus = true;
+    let innerWidth:number
     export let darkmode:boolean
 </script>
-
-<nav class="{darkmode?"dark":""} z-20 absolute w-full">
+<svelte:window bind:innerWidth/>
+<nav class="{darkmode?"dark":""} z-20 absolute w-full ">
     <div class="flex items-center justify-between">
-        <!-- Logo and Site Name -->
         <div class="flex items-center p-4 dark:hover:fill-white dark:fill-green-500  hover:fill-black fill-green-300">
             <a href="/">
-                <button class="flex space-x-3 fill-red">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" class=" fill-inherit"><path d="m8.917 32.375 3.208-1.333q-.375-1.042-.667-2.125-.291-1.084-.416-2.25l-2.125 1.416Zm7.583-2.042h7.042q.833-2.583 1.27-4.729.438-2.146.438-4.104 0-4.333-1.188-7.729Q22.875 10.375 20 7.292q-2.875 3.083-4.062 6.479-1.188 3.396-1.188 7.729 0 1.958.438 4.104.437 2.146 1.312 4.729Zm3.5-9.166q-1.208 0-1.979-.771-.771-.771-.771-2.021 0-1.167.771-1.958.771-.792 1.979-.792 1.208 0 1.979.792.771.791.771 1.958 0 1.25-.771 2.021-.771.771-1.979.771Zm11.083 11.166v-4.25L29 26.667q-.167 1.166-.458 2.25-.292 1.083-.667 2.125ZM20 .875q5.125 4.5 7.417 9.5 2.291 5 2.291 10.75v.667l3.875 2.583q.917.625 1.438 1.583.521.959.521 2.084v10.833l-10.209-4.083H14.667L4.458 38.875V28.042q0-1.125.521-2.084Q5.5 25 6.458 24.375l3.875-2.583v-.542q0-5.833 2.313-10.854Q14.958 5.375 20 .875Z"/></svg>
-                    <h1 class="text-4xl font-bold text-green-500 font-avarabold">
-                        No_Name
-                    </h1>
+                <button class="flex pl-3 ">
+                    <a href="/" >
+                        <button>
+                            <h1 class="flex md:text-4xl text-2xl items-center font-bold text-green-500 font-avarabold">
+                                Gautham_KJ
+                            </h1>
+                        </button>
+                    </a>
                 </button>
             </a>
         </div>
         <!-- Navigation Buttons -->
         <div class="flex pr-6 space-x-6 text-xl font-avarabold text-white  items-center ">
-            <button class="dark:hover:text-white hover:text-black rounded-xl border-white bg-slate-400 hover:bg-opacity-20 bg-opacity-0 p-3" >
-                Home
-            </button>
-            <a href="/aboutme">
-                <button class="dark:hover:text-white hover:text-black rounded-xl border-white bg-slate-400 hover:bg-opacity-20 bg-opacity-0 p-3" >
-                    About
-                </button >
-            </a>
-            <a href="/">
-                <button class="dark:hover:text-white hover:text-black rounded-xl border-white bg-slate-400 hover:bg-opacity-20 bg-opacity-0 p-3" >
-                    Projects
-                </button>
-            </a>
+            <div class="hidden md:flex">
+                <a href="/ProjectDetails">
+                    <button class="dark:hover:text-white hover:text-black rounded-xl border-white bg-slate-400 hover:bg-opacity-20 bg-opacity-0 p-3" >
+                        About
+                    </button >
+                </a>
+                <a href="/">
+                    <button class="dark:hover:text-white hover:text-black rounded-xl border-white bg-slate-400 hover:bg-opacity-20 bg-opacity-0 p-3" >
+                        Projects
+                    </button>
+                </a>
+            </div>
             <!-- Darkmode Button -->
             {#if darkmode==true}
                 <button on:click={()=>(darkmode= !darkmode)} class="rounded-xl border-white bg-slate-400 hover:bg-opacity-20 bg-opacity-0 p-3">

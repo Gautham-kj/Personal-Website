@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode:"jit",
   darkMode:"class",
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
@@ -10,6 +11,10 @@ module.exports = {
         avarabold_italic:["avarabold_italic","regular"],
         calistoga:["calistoga","regular"],
         lobster:["lobster","regular"]
+      },
+      colors:{
+        "mainbg":"#871400",
+        "nightsky":"#001829"
       }
     }
   },

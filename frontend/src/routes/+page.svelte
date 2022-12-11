@@ -8,11 +8,10 @@
     let sky="src/lib/images/sky.svg";
     let Realmoon="src/lib/images/RealMoon.svg";
     let RealSun= "src/lib/images/RealSun.svg";
-    let scroll:number=0;
-    let width:number=0;
-    let sunscroll:number=(width*0.75-scroll*1.3);
+    let scroll:number;
+    let width:number;
     let height:number;
-    </script>
+</script>
 <svelte:window bind:scrollY={scroll} bind:innerWidth={width} bind:innerHeight={height}/>
 <body class="bg-mainbg">
     <div class:darkmode class="{darkmode?"dark":""} bg-mainbg " >
@@ -25,7 +24,7 @@
                         {#if darkmode}
                             <img src={Realmoon} alt="Moon" class="flex py-4 w-20 md:w-40 overflow-hidden " style:transform={`translate3d(${scroll*1.3}px,0,0)`}/>
                         {:else}
-                            <img src={RealSun} alt="Sun" class=" w-40 md:w-80 items-end overflow-hidden" style:transform={`translate3d(${sunscroll*0.5}px,0,0)`}/>
+                            <img src={RealSun} alt="Sun" class=" w-40 md:w-80 items-end overflow-hidden" style:transform={`translate3d(${(width*0.75-scroll*2)}px,0,0)`}/>
                         {/if}
                     </div>
                     <img src={frontmount} alt="frontmountain" class="w-full  overflow-x-hidden absolute z-3" />  

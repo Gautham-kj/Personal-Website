@@ -61,3 +61,11 @@
 .parent:hover .parent-hover\:fill-red-400 {
     fill:rgba(246, 89, 5, 0.888);
 }
+
+.selector {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}

@@ -26,7 +26,7 @@
 </script>
 <svelte:window bind:scrollY={scroll} bind:innerWidth={width} />
 <body class="">
-    <div class:darkMode class="{darkMode?"dark":""} "  >
+    <div class:darkMode class="{darkMode?"dark":""} selector "  >
         <Navbar bind:darkMode />
         <div class="w-screen bg-mainbg dark:bg-nightsky" style:height={`${0.5625*width}`}>
             <div class=" w-full overflow-x-hidden bg-blue-400">
@@ -34,12 +34,12 @@
                     <img src={backmount} alt="backmountain" class="w-full  transform overflow-hidden dark:bg-transparent bg-blue-400 z-1 absolute" />
                     <div class="flex w-full pt-10 md:py-24 absolute overflow-hidden">
                         {#if darkMode}
-                            <img src={Realmoon} alt="Moon" class="flex py-4 w-20 md:w-40 overflow-hidden " style:transform={`translate3d(${scroll*1.3}px,0,0)`}/>
+                            <img draggable="false" src={Realmoon} alt="Moon" class="flex py-4 w-20 md:w-40 overflow-hidden " style:transform={`translate3d(${scroll*1.3}px,0,0)`}/>
                         {:else}
-                            <img src={RealSun} alt="Sun" class=" w-40 md:w-80 items-end overflow-hidden" style:transform={`translate3d(${(width*0.75-scroll*2)}px,0,0)`}/>
+                            <img draggable="false" src={RealSun} alt="Sun" class=" w-40 md:w-80 items-end overflow-hidden" style:transform={`translate3d(${(width*0.75-scroll*2)}px,0,0)`}/>
                         {/if}
                     </div>
-                    <img src={frontmount} alt="frontmountain" class="w-full  overflow-x-hidden absolute z-3" />  
+                    <img draggable="false" src={frontmount} alt="frontmountain" class="w-full  overflow-x-hidden absolute z-3" />  
             </div>
         </div>
     </div>
@@ -48,3 +48,4 @@
     </div>
     <h1>{height}</h1>
 </body>
+

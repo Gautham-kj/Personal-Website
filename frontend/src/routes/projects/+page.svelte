@@ -1,8 +1,7 @@
 <script lang="ts">
-	import { browser } from '$app/environment';
+    import {browser} from "$app/environment";
     import Navbar from "../../Components/Navbar.svelte";
     let darkMode:boolean;
-    let test="src/lib/images/RealMoon.svg";
     if (browser) {
         if (
             localStorage.theme === 'dark' ||
@@ -17,7 +16,7 @@
     }
 </script>
 
-<Navbar bind:darkMode/>
+
 <div  class="h-screen z-0  w-full dark:bg-black bg-blue-500 text-white absolute">
-    
+    <Navbar bind:darkMode/>
 </div>

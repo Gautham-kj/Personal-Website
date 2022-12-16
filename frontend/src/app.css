@@ -48,3 +48,16 @@
     font-style: normal;
 
 }
+
+@font-face{
+    font-family :'roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+}
+
+.parent:hover .parent-hover\:fill-purple-800 {
+    fill:rgba(166, 81, 166, 0.888);
+}
+
+.parent:hover .parent-hover\:fill-red-400 {
+    fill:rgba(246, 89, 5, 0.888);
+}
